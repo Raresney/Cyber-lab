@@ -9,7 +9,7 @@
 
 | Tool                                         | Description                                             | Type             |
 | -------------------------------------------- | ------------------------------------------------------- | ---------------- |
-| 🔍 [Port Scanner](./port-scanner/scanner.py) | Scans a target for open ports and grabs service banners | 🔴 Red / 🔵 Blue |
+| 🔍 [Port Scanner](./Port_scanner/scanner.py) | Scans a target for open ports and grabs service banners | 🔴 Red / 🔵 Blue |
 
 _More tools coming soon..._
 
