@@ -31,11 +31,14 @@ _More tools coming soon..._
 Cyber-Lab/
 │
 ├── 📄 README.md
-├── 🔍 port-scanner/
-│   ├── scanner.py       # Port scanner with banner grabbing
-│   └── notes.md         # What I learned building it
-```
+├── 🔍 Port_Scanner/
+│   ├── main.py       # Port scanner with banner grabbing
+│
+└── 🔎 Subdomain_Enumerator/
+    └── main.py       # Subdomain enumeration via DNS lookup
+
 
 ---
 
 _⚡ This repo grows as I learn. Check back often._
+```
