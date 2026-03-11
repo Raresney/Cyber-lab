@@ -17,13 +17,40 @@ services = {
     8080: "HTTP-Alt"
 }
 
-for port in services:
+banner_triggers = {
+    80: b"GET / HTTP/1.0\r\n\r\n",
+    8080: b"GET / HTTP/1.0\r\n\r\n",
+    443: b"GET / HTTP/1.0\r\n\r\n",
+}
+
+print(f"Scanning {target}...\n")
+
+for port, service in services.items():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.settimeout(0.5)
     result = sock.connect_ex((target, port))
 
     if result == 0:
-        service = services.get(port, "Unknown")
-        print(f"Port {port} is OPEN — {service}")
+        print(f"[OPEN]  Port {port:5} — {service}")
+
+        trigger = banner_triggers.get(port)
+        if trigger:
+            try:
+                sock.sendall(trigger)
+            except:
+                pass
+
+        try:
+            banner = sock.recv(1024).decode(errors="replace").strip()
+            if banner:
+                first_line = banner.splitlines()[0]
+                print(f"         Banner: {first_line}")
+        except:
+            pass
+    else:
+        print(f"[closed] Port {port:5} — {service}")
 
     sock.close()
+
+print("\nScan complete.")
+
