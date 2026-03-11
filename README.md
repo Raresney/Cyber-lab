@@ -7,9 +7,10 @@
 
 ## 🧰 Tools
 
-| Tool                                      | Description                                             | Type             |
-| ----------------------------------------- | ------------------------------------------------------- | ---------------- |
-| 🔍 [Port Scanner](./Port_Scanner/main.py) | Scans a target for open ports and grabs service banners | 🔴 Red / 🔵 Blue |
+| Tool                                                      | Description                                             | Type             |
+| --------------------------------------------------------- | ------------------------------------------------------- | ---------------- |
+| 🔍 [Port Scanner](./Port_Scanner/main.py)                 | Scans a target for open ports and grabs service banners | 🔴 Red / 🔵 Blue |
+| 🔎 [Subdomain Enumerator](./Subdomain_Enumerator/main.py) | Enumerates subdomains using wordlist + DNS lookup       | 🔴 Red           |
 
 _More tools coming soon..._
 
