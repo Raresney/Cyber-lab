@@ -11,14 +11,13 @@
 | --------------------------------------------------------- | ------------------------------------------------------- | ---------------- |
 | 🔍 [Port Scanner](./Port_Scanner/main.py)                 | Scans a target for open ports and grabs service banners | 🔴 Red / 🔵 Blue |
 | 🔎 [Subdomain Enumerator](./Subdomain_Enumerator/main.py) | Enumerates subdomains using wordlist + DNS lookup       | 🔴 Red           |
-
-_More tools coming soon..._
+| 🔐 [Hydra BruteForce](./Hydra_BruteForce/)                | FTP brute force demo using Hydra and a custom wordlist  | 🔴 Red           |
 
 ---
 
 ## 📚 Areas of Practice
 
-- 🔴 **Offensive Security** — port scanning, banner grabbing, reconnaissance
+- 🔴 **Offensive Security** — port scanning, banner grabbing, reconnaissance, brute force
 - 🔵 **Defensive Security** — log analysis, threat detection, SOC concepts
 - 🐍 **Python for Security** — building tools from scratch to reinforce fundamentals
 - 🧪 **Labs** — TryHackMe, Hack The Box, hands-on experiments
@@ -32,10 +31,16 @@ Cyber-Lab/
 │
 ├── 📄 README.md
 ├── 🔍 Port_Scanner/
-│   └── main.py       # Port scanner with banner grabbing
+│   └── main.py               # Port scanner with banner grabbing
 │
-└── 🔎 Subdomain_Enumerator/
-    └── main.py       # Subdomain enumeration via DNS lookup
+├── 🔎 Subdomain_Enumerator/
+│   └── main.py               # Subdomain enumeration via DNS lookup
+│
+└── 🔐 Hydra_BruteForce/
+    ├── setup.sh              # Automated setup script
+    ├── wordlists/
+    │   └── test_wordlist.txt
+    └── README.md
 ```
 
 ---
