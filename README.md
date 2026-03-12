@@ -32,16 +32,12 @@ Cyber-Lab/
 │
 ├── 📄 README.md
 ├── 🔍 Port_Scanner/
-│   ├── main.py       # Port scanner with banner grabbing
+│   └── main.py       # Port scanner with banner grabbing
 │
 └── 🔎 Subdomain_Enumerator/
     └── main.py       # Subdomain enumeration via DNS lookup
-
-
----
-
-
-_⚡ This repo grows as I learn. Check back often._
 ```
 
 ---
+
+_⚡ This repo grows as I learn. Check back often._
