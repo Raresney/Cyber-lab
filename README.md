@@ -34,7 +34,8 @@ Cyber-Lab/
 │   └── main.py               # Port scanner with banner grabbing
 │
 ├── 🔎 Subdomain_Enumerator/
-│   └── main.py               # Subdomain enumeration via DNS lookup
+│   ├── main.py               # Subdomain enumeration via DNS lookup
+│   └── wordlist.txt          # Default subdomain wordlist
 │
 └── 🔐 Hydra_BruteForce/
     ├── setup.sh              # Automated setup script

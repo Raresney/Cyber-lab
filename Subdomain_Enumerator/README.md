@@ -9,7 +9,7 @@ A fast Python subdomain enumerator that uses DNS resolution and multithreading t
 
 ## 📋 Features
 
-- Enumerates subdomains using a built-in wordlist of 50 common entries
+- Enumerates subdomains using an external wordlist (50 common entries included)
 - DNS resolution via `socket.gethostbyname`
 - 50 parallel threads for fast scanning
 - Displays discovered subdomains with resolved IPs
@@ -26,14 +26,11 @@ A fast Python subdomain enumerator that uses DNS resolution and multithreading t
 ## 🚀 Usage
 
 ```bash
-python main.py
+python main.py                  # default: nmap.org
+python main.py example.com      # custom target
 ```
 
-Change the target at the top of the file:
-
-```python
-target = "nmap.org"  # replace with your target
-```
+The script reads subdomains from `wordlist.txt` in the same directory. Edit the file to add your own entries.
 
 ---
 

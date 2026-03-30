@@ -26,13 +26,8 @@ A lightweight Python port scanner that checks for open ports on a target and gra
 ## 🚀 Usage
 
 ```bash
-python main.py
-```
-
-Change the target at the top of the file:
-
-```python
-target = "scanme.nmap.org"  # replace with your target
+python main.py                  # default: scanme.nmap.org
+python main.py 192.168.1.1      # custom target
 ```
 
 ---

@@ -1,6 +1,7 @@
 import socket
+import sys
 
-target = "scanme.nmap.org"
+target = sys.argv[1] if len(sys.argv) > 1 else "scanme.nmap.org"
 
 services = {
     21: "FTP",
@@ -37,7 +38,7 @@ for port, service in services.items():
         if trigger:
             try:
                 sock.sendall(trigger)
-            except:
+            except socket.error:
                 pass
 
         try:
@@ -45,7 +46,7 @@ for port, service in services.items():
             if banner:
                 first_line = banner.splitlines()[0]
                 print(f"         Banner: {first_line}")
-        except:
+        except socket.error:
             pass
     else:
         print(f"[closed] Port {port:5} — {service}")
@@ -53,4 +54,3 @@ for port, service in services.items():
     sock.close()
 
 print("\nScan complete.")
-
