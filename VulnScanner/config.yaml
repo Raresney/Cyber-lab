@@ -1,0 +1,57 @@
+# VulnScanner Configuration
+# -------------------------
+
+scanner:
+  threads: 10
+  timeout: 10            # seconds per request
+  rate_limit: 0.1        # seconds between requests (per thread)
+  max_depth: 3           # crawler depth
+  max_pages: 100         # max pages to crawl
+  user_agent: "VulnScanner/1.0 (Security Audit Tool)"
+  follow_redirects: true
+  verify_ssl: false
+
+modules:
+  sqli:
+    enabled: true
+    techniques:
+      - error_based
+      - boolean_based
+      - time_based
+    time_delay: 5        # seconds for time-based blind
+
+  xss:
+    enabled: true
+    check_reflected: true
+    check_dom: true
+
+  traversal:
+    enabled: true
+    depth: 8             # how many ../ levels
+
+  headers:
+    enabled: true
+    required_headers:
+      - Content-Security-Policy
+      - X-Content-Type-Options
+      - X-Frame-Options
+      - Strict-Transport-Security
+      - X-XSS-Protection
+      - Referrer-Policy
+      - Permissions-Policy
+
+  dirbrute:
+    enabled: true
+    threads: 20
+    status_codes: [200, 201, 301, 302, 403]
+
+reporting:
+  format: html           # html or json
+  output_dir: reports
+  include_evidence: true
+  severity_levels:
+    - CRITICAL
+    - HIGH
+    - MEDIUM
+    - LOW
+    - INFO

