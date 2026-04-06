@@ -48,7 +48,7 @@ VulnScanner/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/VulnScanner.git
+git clone https://github.com/Raresney/VulnScanner.git
 cd VulnScanner
 
 # Install dependencies
@@ -58,26 +58,31 @@ pip install -r requirements.txt
 ## Usage
 
 ### Basic Scan
+
 ```bash
 python main.py http://target.com
 ```
 
 ### Select Specific Modules
+
 ```bash
 python main.py http://target.com -m sqli xss headers
 ```
 
 ### Verbose Output + JSON Report
+
 ```bash
 python main.py http://target.com -vv -o json
 ```
 
 ### Custom Configuration
+
 ```bash
 python main.py http://target.com -c custom_config.yaml --threads 20 --depth 5
 ```
 
 ### All Options
+
 ```
 positional arguments:
   target                Target URL to scan
@@ -108,6 +113,7 @@ python main.py http://127.0.0.1:5000
 ```
 
 The TestLab app includes:
+
 - SQL Injection (search, login, profile pages)
 - Reflected & Stored XSS (search, guestbook, profile)
 - Path Traversal (file reader)
@@ -117,6 +123,7 @@ The TestLab app includes:
 ## Sample Report
 
 The scanner generates professional HTML reports with:
+
 - Risk score calculation
 - Severity classification (Critical / High / Medium / Low / Info)
 - Evidence and proof-of-concept payloads
