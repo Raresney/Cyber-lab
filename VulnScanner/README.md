@@ -48,8 +48,8 @@ VulnScanner/
 
 ```bash
 # Clone the repository
-git clone https://github.com/Raresney/VulnScanner.git
-cd VulnScanner
+git clone https://github.com/Raresney/Cyber-Lab.git
+cd Cyber-Lab/VulnScanner
 
 # Install dependencies
 pip install -r requirements.txt
