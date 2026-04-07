@@ -13,12 +13,13 @@
 | 🔎 [Subdomain Enumerator](./Subdomain_Enumerator/main.py) | Enumerates subdomains using wordlist + DNS lookup       | 🔴 Red           |
 | 🔐 [Hydra BruteForce](./Hydra_BruteForce/)                | FTP brute force demo using Hydra and a custom wordlist  | 🔴 Red           |
 | 📡 [Packet Sniffer](./Packet_Sniffer/main.py)             | Real-time packet capture with ARP spoof detection       | 🔵 Blue          |
+| 🛡️ [VulnScanner](./VulnScanner/)                          | Multi-module web vulnerability scanner with HTML reports | 🔴 Red           |
 
 ---
 
 ## 📚 Areas of Practice
 
-- 🔴 **Offensive Security** — port scanning, banner grabbing, reconnaissance, brute force
+- 🔴 **Offensive Security** — port scanning, banner grabbing, reconnaissance, brute force, web vulnerability scanning
 - 🔵 **Defensive Security** — log analysis, threat detection, SOC concepts
 - 🐍 **Python for Security** — building tools from scratch to reinforce fundamentals
 - 🧪 **Labs** — TryHackMe, Hack The Box, hands-on experiments
@@ -44,8 +45,16 @@ Cyber-Lab/
 │   │   └── test_wordlist.txt
 │   └── README.md
 │
-└── 📡 Packet_Sniffer/
-    ├── main.py               # Packet sniffer with ARP spoof detection
+├── 📡 Packet_Sniffer/
+│   ├── main.py               # Packet sniffer with ARP spoof detection
+│   └── README.md
+│
+└── 🛡️ VulnScanner/
+    ├── main.py               # CLI entry point
+    ├── config.yaml           # Scanner configuration
+    ├── scanner/              # Core engine, crawler, reporter, modules
+    ├── payloads/             # SQLi, XSS, traversal, directory wordlists
+    ├── testlab/              # Vulnerable Flask app for testing
     └── README.md
 ```
 
