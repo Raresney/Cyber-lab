@@ -1,0 +1,36 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Models & weights
+models/*.pt
+models/*.pth
+*.pt
+*.pth
+
+# Dataset & cache
+data/
+.cache/
+samples/*.mp4
+samples/*.avi
+samples/*.mov
+
+# Streamlit
+.streamlit/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
