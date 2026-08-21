@@ -7,14 +7,14 @@
 
 ## 🧰 Tools
 
-| Tool                                                      | Description                                             | Type             |
-| --------------------------------------------------------- | ------------------------------------------------------- | ---------------- |
-| 🔍 [Port Scanner](./Port_Scanner/main.py)                 | Scans a target for open ports and grabs service banners | 🔴 Red / 🔵 Blue |
-| 🔎 [Subdomain Enumerator](./Subdomain_Enumerator/main.py) | Enumerates subdomains using wordlist + DNS lookup       | 🔴 Red           |
-| 🔐 [Hydra BruteForce](./Hydra_BruteForce/)                | FTP brute force demo using Hydra and a custom wordlist  | 🔴 Red           |
-| 📡 [Packet Sniffer](./Packet_Sniffer/main.py)             | Real-time packet capture with ARP spoof detection       | 🔵 Blue          |
-| 🛡️ [VulnScanner](./VulnScanner/)                          | Multi-module web vulnerability scanner with HTML reports | 🔴 Red           |
-| 🧠 [DeepfakeDetector](./DeepfakeDetector/)                | Detects deepfake video/audio using biometric + neural analysis | 🔵 Blue / 🤖 AI |
+| Tool                                                      | Description                                                    | Type             |
+| --------------------------------------------------------- | -------------------------------------------------------------- | ---------------- |
+| 🔍 [Port Scanner](./Port_Scanner/main.py)                 | Scans a target for open ports and grabs service banners        | 🔴 Red / 🔵 Blue |
+| 🔎 [Subdomain Enumerator](./Subdomain_Enumerator/main.py) | Enumerates subdomains using wordlist + DNS lookup              | 🔴 Red           |
+| 🔐 [Hydra BruteForce](./Hydra_BruteForce/)                | FTP brute force demo using Hydra and a custom wordlist         | 🔴 Red           |
+| 📡 [Packet Sniffer](./Packet_Sniffer/main.py)             | Real-time packet capture with ARP spoof detection              | 🔵 Blue          |
+| 🛡️ [VulnScanner](./VulnScanner/)                          | Multi-module web vulnerability scanner with HTML reports       | 🔴 Red           |
+| 🧠 [DeepfakeDetector](./DeepfakeDetector/)                | Detects deepfake video/audio using biometric + neural analysis | 🔵 Blue / 🤖 AI  |
 
 ---
 
@@ -24,7 +24,7 @@
 - 🔵 **Defensive Security** — log analysis, threat detection, SOC concepts, deepfake detection
 - 🤖 **AI / ML for Security** — neural networks for media authenticity, biometric signal analysis
 - 🐍 **Python for Security** — building tools from scratch to reinforce fundamentals
-- 🧪 **Labs** — TryHackMe, Hack The Box, hands-on experiments
+- 🧪 **Labs** — TryHackMe, hands-on experiments
 
 ---
 
